@@ -1,0 +1,378 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+   .navbar{
+    @apply flex flex-row justify-between mx-20 mt-5;
+
+   }
+   .navbar__list{
+    @apply flex flex-row space-x-5  justify-center items-center;
+   }
+   .navbar__list-item{
+    @apply text-primary text-base font-normal cursor-pointer hover:border-b-2 hover:border-primary
+   }
+   .btn {
+    @apply rounded-xl bg-primary font-bold text-base w-36 h-14 text-white hover:bg-[#313852] outline-none;
+   }
+   /* Header */
+   .header-content{
+    @apply  text-center mt-16 space-y-10;
+    background-image: url(../dist/images/Blur\ Gradient.svg);
+   }
+   .active{
+      @apply border-b-2 border-primary font-bold hover:no-underline
+   }
+   .title{
+    @apply font-bold text-5xl text-primary
+   }
+   .description {
+    @apply font-normal text-base  
+   }
+   .description--big{
+    @apply text-lg
+   }
+   .header-content__dashboard {
+    @apply mx-auto;
+  
+   }
+   .input-group__input{
+     @apply h-16 w-2/4 bg-white rounded-2xl p-8 outline-none
+
+   }
+   .btn--tial{
+      @apply -ml-48 w-44
+   }
+
+   .features{
+      @apply flex flex-col justify-center items-center  mt-28 space-y-5 ;
+   }
+ 
+   .features-content__item{
+      @apply space-y-5  p-10 
+   }
+   .features-content--line{
+      @apply border-r-2 border-[#CDC7D2] mt-5 mb-5
+   }
+   .features-content{
+      @apply grid grid-cols-3 bg-violet rounded-3xl mx-20 
+   }
+   .title--position{
+      @apply flex text-center
+   }
+   .title--small{
+      @apply text-2xl
+   }
+   .description--gradient{
+      @apply font-bold;
+      background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+   }
+ /*   Why Us */
+   .why-us{
+      @apply grid grid-cols-2 mx-20 mt-20 gap-16
+   }
+   .why-us__content{
+      @apply space-y-10
+   }
+   .why-us__list-item{
+      @apply flex flex-row items-center gap-5
+   }
+   .why-us__list{
+      @apply space-y-10
+   }
+   /* CTA */
+   .impressions__content{
+      @apply space-y-5 flex flex-col justify-center;
+   }
+   .impressions{
+      @apply grid grid-cols-2 px-20 mt-20 p-5 gap-10;
+      background-image: url(../dist/images/Blur\ Gradient.png)
+   }
+   .logos{
+      @apply mx-20 mt-14;
+   }
+   .logos--gradient{
+      @apply mx-20 mt-10 absolute;
+      top: 500px;
+   }
+   /* Discover */
+   .discover{
+      @apply space-y-2
+   }
+   .discover__title{
+      @apply text-primary font-bold text-2xl
+   }
+   .features-content--light{
+      @apply gap-6;
+      background: rgba(215, 152, 225, 0.15);
+   }
+   /* Testimonials */
+   .testimonials{
+      @apply flex flex-col justify-center items-center mt-20 text-center
+   }
+   .cards{
+      @apply grid grid-cols-3 mx-20 pt-10 gap-10
+   }
+   .card{
+      @apply space-y-5  p-10 rounded-xl;
+      border: 2px solid rgba(97, 153, 237, 0.26);
+   }
+   .card__profile{
+      @apply flex flex-col items-center space-y-3 text-center
+   }
+   .card__profile-name{
+      @apply text-xl font-semibold text-primary
+   }
+   .card__profile-role{
+      @apply font-normal text-xs
+   }
+   /* Footer */
+   .footer{
+    @apply bg-primary text-white flex flex-col  px-20 pt-10
+   }
+   .footer__pages{
+    @apply grid grid-cols-5
+   }
+   .title--light {
+      @apply text-white font-semibold text-lg 
+   }
+   .footer__list{
+      @apply space-y-3 
+   }
+   .footer__list-item {
+      @apply  font-normal text-base opacity-60 hover:underline cursor-pointer
+   }
+  .footer__subscribe{
+   @apply space-y-3 col-span-2
+  }
+  .btn--subscribe{
+   @apply text-primary bg-white -ml-5;
+  }
+  .subscribe-content__input{
+   @apply h-10 w-1/2 bg-[#2B2E3C] rounded-2xl p-8 outline-none
+  }
+  .copyright{
+   @apply flex flex-row space-x-3 justify-center p-10  items-center
+  }
+  .copyright__finsweet{
+   @apply  opacity-50 font-normal text-xs 
+  } 
+  .price-content{
+    @apply flex flex-col text-center p-16 space-y-5 mt-16;
+    background-image: url(../dist/images/Blur\ Gradient.svg);
+  }
+  .btn-content{
+   @apply flex flex-row justify-center items-center
+  }
+  .footer__line{
+   @apply flex-grow border-t border-[#888888]
+  }
+  
+/* Product Page */
+.header-content--product{
+   @apply grid grid-cols-2 px-20 gap-10 mt-2  pb-40;
+   background-image: url(../dist/images/Blur\ Gradient.jpg);
+   background-size: cover;
+}
+.header-content--description{
+   @apply flex flex-col text-start justify-center space-y-5 
+}
+.btn--outlined{
+   @apply bg-white text-primary border-2 hover:bg-primary hover:text-white
+}
+.grid-container{
+   @apply grid grid-cols-2 mt-10 gap-10;
+ 
+}
+.grid-container__section-image{
+   @apply pr-20 pl-20;
+}
+.grid-container__content{
+   @apply flex  flex-col justify-center space-y-5 pl-20;
+   
+}
+.grid-container--gradientleft{
+   @apply pl-20;
+   background-image: url(../dist/images/Blur\ Gradientleft.png);
+}
+.grid-container--gradientright{
+   @apply pr-20;
+   background-image: url(../dist/images/Blur\ Gradient.svg);
+}
+.grid-container__position{
+  @apply -mt-5;
+}
+.features--gradient{
+   @apply space-y-10 mt-0 pt-28; 
+   background-image: url(../dist/images/Blur\ Gradient.png);
+}
+.features-content--curve{
+   @apply ml-0;
+   background: rgba(255, 255, 255, 0.69);
+   border-radius: 0px 67px 0px 0px;
+}
+/* Price */
+.header-content--price{
+   @apply space-y-5
+}
+.card-price__header{
+   @apply flex flex-row gap-4 items-start text-start 
+}
+.line{
+   @apply border-t border-[#D8D8D8] gap-0 mt-10 
+}
+.card-price__text{
+   @apply font-bold text-primary text-base
+}
+
+.card-price__list-item{
+   @apply flex flex-row mt-10 gap-5
+}
+.card-price__title{
+   @apply font-bold text-4xl text-primary
+}
+.card-price{
+   @apply p-10 bg-white rounded-3xl border-gray border-2;
+}
+.card-price--contained{
+   @apply border-blue border-4 bg-none;
+   background-image: url(../dist/images/Background.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+.card-price__paragraph{
+   @apply pt-10 pb-5
+}
+.card-price__footer{
+   @apply space-y-5
+}
+.frequestly{
+   @apply grid grid-cols-2 mx-20 mt-20 bg-[#F0F2FE] rounded-3xl p-28
+}
+.frequestly__content{
+   @apply space-y-5
+}
+.frequestly__list{
+   @apply space-y-10
+}
+.frequestly__list-item{
+   @apply space-y-4 bg-white p-10 rounded-3xl;
+}
+.frequestly__list-item-content{
+   @apply flex flex-row justify-between rounded-3xl
+}
+.btn--light{
+   @apply bg-violet rounded-2xl w-72 pl-32 text-primary hover:bg-violet
+}
+.btn--position-price{
+   @apply  absolute;
+}
+/* Contact page */
+.contact{
+   @apply flex flex-col justify-center items-center mt-20;
+   background-image: url(../dist/images/Blur\ Gradient.svg);
+}
+.contact-form{
+   @apply  grid grid-cols-2 bg-[#F0F2FE] rounded-3xl mx-20 mt-20 gap-40 p-20 space-y-5
+}
+.contact__form-section{
+   @apply space-y-5
+}
+.contact-form__details{
+   @apply space-y-10 pt-16 
+}
+.contact-form__list-item{
+   @apply flex flex-row space-x-5
+}
+.contact-form__fields{
+   @apply space-y-5 
+}
+.field--position{
+   @apply flex  space-x-2;
+   width: 500px
+}
+.field__input-item{
+   @apply h-16 bg-white rounded-lg pl-4 outline-none;
+   width: 500px
+}
+.field__message{
+   @apply h-48 bg-white rounded-lg pl-4 outline-none;
+   width: 500px;
+}
+.btn--full{
+   @apply outline-none;
+   width: 500px;
+}
+
+/* About page */
+.header-content--about{
+   @apply mx-20;
+   background-image: url(../dist/images/Blur\ Gradient.svg);
+}
+.about-us{
+   @apply flex flex-col justify-center  items-center mt-20  space-y-5
+}
+.main-content{
+   @apply bg-[#F0F2FE] px-20 gap-10 grid grid-cols-2 mt-16 p-10
+}
+.main-content__goals{
+   @apply  flex flex-col gap-y-10
+}
+.main-content__vision{
+   @apply  flex flex-col gap-y-10
+}
+.values{
+   @apply flex flex-col justify-center items-center mt-20  space-y-5
+}
+.team{
+   @apply mx-20 grid grid-cols-2 gap-10 mt-20
+}
+.team__content{
+   @apply space-y-5
+}
+.team__members-section{
+   @apply grid grid-cols-3 gap-5
+}
+.team__member{
+   @apply bg-violet ;
+   border-radius: 12px 12px 12px 12px;
+}
+.team__member-profile{
+  @apply p-3 space-y-3
+}
+.team__member-role{
+   @apply font-normal text-primary text-sm
+}
+.team__member-profile-title{
+   @apply font-bold text-primary text-xl
+}
+/* Blog */
+.trending-post{
+   @apply grid grid-cols-2 gap-10 mx-20 border-2 p-10 border-[#D8D8D8] rounded-3xl
+}
+.trending-post__content{
+   @apply items-start text-start gap-y-5 flex flex-col
+}
+.posts{
+   @apply flex flex-col justify-center text-center mt-20
+}
+.card-post{
+   @apply flex flex-col gap-y-5 items-start text-start
+}
+
+/* All blog post page */
+.header-content__image{
+   @apply mx-auto
+}
+.article{
+   @apply flex flex-col gap-y-5 items-center mt-20 mx-40
+}
+.description--border{
+   @apply border-l border-violet pl-5
+
+}
