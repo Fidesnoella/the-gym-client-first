@@ -1430,21 +1430,21 @@ video {
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
-.contact__field--position {
+.contact__names-field {
   display: flex;
 }
 
-.contact__field--position > :not([hidden]) ~ :not([hidden]) {
+.contact__names-field > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.contact__field--position{
+.contact__names-field{
   width: 500px
 }
 
-.contact__field__input-item {
+.contact__field-input-item {
   height: 4rem;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
@@ -1455,7 +1455,7 @@ video {
   width: 500px;
 }
 
-.contact__field__message {
+.contact__field-message {
   height: 12rem;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;

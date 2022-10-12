@@ -318,15 +318,15 @@
 .contact__form-fields{
    @apply space-y-5 
 }
-.contact__field--position{
+.contact__names-field{
    @apply flex  space-x-2;
    width: 500px
 }
-.contact__field__input-item{
+.contact__field-input-item{
    @apply h-16 bg-white rounded-lg pl-4 outline-none;
    width: 500px
 }
-.contact__field__message{
+.contact__field-message{
    @apply h-48 bg-white rounded-lg pl-4 outline-none;
    width: 500px;
 }
