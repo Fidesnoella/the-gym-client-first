@@ -48,7 +48,7 @@
       @apply flex flex-col justify-center items-center  mt-28 space-y-10 ;
    }
    .business-features__label,
-   .why-us__label,
+   .advert-section__label,
    .discover__label{
       @apply font-normal text-lg;
       background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
@@ -75,7 +75,7 @@
       @apply font-bold text-3xl text-primary items-center 
    }
    .business-features__text,
-   .why-us__description,
+   .advert-section__description,
    .impressions__description,
    .discover__description,
    .price-content__description,
@@ -83,30 +83,30 @@
       @apply font-normal text-base text-primary
    }
  /*   Why Us */
-   .why-us,
+   .advert-section,
    .discover{
       @apply grid grid-cols-2 mx-20 mt-20 gap-16
    }
-   .why-us__content,
+   .advert-section__content,
    .discover__content{
       @apply space-y-10
    }
-   .why-us__title,
+   .advert-section__title,
    .impressions__title,
    .discover__title,
    .service-features__title,
    .testimonials__title{
       @apply font-bold text-5xl text-primary
    }
-   .why-us__list-item,
+   .advert-section__list-item,
    .discover__list-item{
       @apply flex flex-row items-center gap-5
    }
-   .why-us__list,
+   .advert-section__list,
    .discover__list{
       @apply space-y-10
    }
-   .why-us__list-description{
+   .advert-section__list-description{
       @apply font-medium text-xl text-primary
    }
    /* CTA */
@@ -117,13 +117,10 @@
       @apply grid grid-cols-2 px-20 mt-20 p-5 gap-10;
       background-image: url(../dist/images/Blur\ Gradient.png)
    }
-   .logos{
+   .logo-wrapper{
       @apply mx-20 mt-14;
    }
-   .logos--gradient{
-      @apply mx-20 mt-10 absolute;
-      top: 500px;
-   }
+
    /* Discover */
    .discover{
       @apply space-y-2

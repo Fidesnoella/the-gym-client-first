@@ -716,7 +716,7 @@ video {
 }
 
 .business-features__label, 
-   .why-us__label, 
+   .advert-section__label, 
    .discover__label {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -779,7 +779,7 @@ video {
 }
 
 .business-features__text, 
-   .why-us__description, 
+   .advert-section__description, 
    .impressions__description, 
    .discover__description, 
    .price-content__description, 
@@ -793,7 +793,7 @@ video {
 
 /*   Why Us */
 
-.why-us, 
+.advert-section, 
    .discover {
   margin-left: 5rem;
   margin-right: 5rem;
@@ -803,14 +803,14 @@ video {
   gap: 4rem;
 }
 
-.why-us__content > :not([hidden]) ~ :not([hidden]), 
+.advert-section__content > :not([hidden]) ~ :not([hidden]), 
    .discover__content > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }
 
-.why-us__title, 
+.advert-section__title, 
    .impressions__title, 
    .discover__title, 
    .service-features__title, 
@@ -822,7 +822,7 @@ video {
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.why-us__list-item, 
+.advert-section__list-item, 
    .discover__list-item {
   display: flex;
   flex-direction: row;
@@ -830,14 +830,14 @@ video {
   gap: 1.25rem;
 }
 
-.why-us__list > :not([hidden]) ~ :not([hidden]), 
+.advert-section__list > :not([hidden]) ~ :not([hidden]), 
    .discover__list > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }
 
-.why-us__list-description {
+.advert-section__list-description {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 500;
@@ -870,18 +870,10 @@ video {
   background-image: url(../dist/images/Blur\ Gradient.png);
 }
 
-.logos {
+.logo-wrapper {
   margin-left: 5rem;
   margin-right: 5rem;
   margin-top: 3.5rem;
-}
-
-.logos--gradient {
-  position: absolute;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  margin-top: 2.5rem;
-  top: 500px;
 }
 
 /* Discover */
