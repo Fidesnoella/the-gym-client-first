@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
    .navbar{
     @apply flex flex-row justify-between mx-20 mt-5;
 
@@ -13,76 +12,99 @@
    .navbar__list-item{
     @apply text-primary text-base font-normal cursor-pointer hover:border-b-2 hover:border-primary
    }
-   .btn {
-    @apply rounded-xl bg-primary font-bold text-base w-36 h-14 text-white hover:bg-[#313852] outline-none;
+   .navbar__btn,
+   .impressions__btn,
+   .price-content__btn{
+      @apply rounded-xl bg-primary font-bold text-base w-36 h-14 text-white hover:bg-[#313852] outline-none;
    }
    /* Header */
    .header-content{
     @apply  text-center mt-16 space-y-10;
     background-image: url(../dist/images/Blur\ Gradient.svg);
    }
-   .active{
+   .navbar__list-item--active{
       @apply border-b-2 border-primary font-bold hover:no-underline
    }
-   .title{
-    @apply font-bold text-5xl text-primary
+   .header-content__title,
+   .price-content__title{
+      @apply font-bold text-5xl text-primary
    }
-   .description {
-    @apply font-normal text-base  
-   }
-   .description--big{
-    @apply text-lg
+   .header-content__description{
+      @apply font-normal text-lg text-center
    }
    .header-content__dashboard {
     @apply mx-auto;
   
    }
-   .input-group__input{
-     @apply h-16 w-2/4 bg-white rounded-2xl p-8 outline-none
-
+   .header-content__input{
+      @apply h-16 w-2/4 bg-white rounded-2xl p-8 outline-none
    }
-   .btn--tial{
-      @apply -ml-48 w-44
+   .header-content__btn{
+      @apply -ml-48 w-44 rounded-xl bg-primary font-bold text-base  h-14 text-white hover:bg-[#313852] outline-none;
    }
-
-   .features{
-      @apply flex flex-col justify-center items-center  mt-28 space-y-5 ;
+   .business-features,
+   .service-features{
+      @apply flex flex-col justify-center items-center  mt-28 space-y-10 ;
    }
- 
-   .features-content__item{
-      @apply space-y-5  p-10 
-   }
-   .features-content--line{
-      @apply border-r-2 border-[#CDC7D2] mt-5 mb-5
-   }
-   .features-content{
-      @apply grid grid-cols-3 bg-violet rounded-3xl mx-20 
-   }
-   .title--position{
-      @apply flex text-center
-   }
-   .title--small{
-      @apply text-2xl
-   }
-   .description--gradient{
-      @apply font-bold;
+   .business-features__label,
+   .why-us__label,
+   .discover__label{
+      @apply font-normal text-lg;
       background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
    }
+   .business-features__item,
+   .service-features__item{
+      @apply space-y-5  p-10 
+   }
+   .service-features__item--line{
+      @apply border-r-2 border-[#CDC7D2] mt-5 mb-5
+   }
+   .business-features__content{
+      @apply grid grid-cols-3 bg-violet rounded-3xl mx-20 
+   }
+   .business-features__title{
+      @apply font-bold text-5xl text-primary items-center text-center
+   }
+   .business-features__subtitle,
+   .service-features__subtitle{
+      @apply font-bold text-3xl text-primary items-center 
+   }
+   .business-features__text,
+   .why-us__description,
+   .impressions__description,
+   .discover__description,
+   .price-content__description{
+      @apply font-normal text-base text-primary
+   }
  /*   Why Us */
-   .why-us{
+   .why-us,
+   .discover{
       @apply grid grid-cols-2 mx-20 mt-20 gap-16
    }
-   .why-us__content{
+   .why-us__content,
+   .discover__content{
       @apply space-y-10
    }
-   .why-us__list-item{
+   .why-us__title,
+   .impressions__title,
+   .discover__title,
+   .service-features__title,
+   .testimonials__title{
+      @apply font-bold text-5xl text-primary
+   }
+   .why-us__list-item,
+   .discover__list-item{
       @apply flex flex-row items-center gap-5
    }
-   .why-us__list{
+   .why-us__list,
+   .discover__list{
       @apply space-y-10
+   }
+   .why-us__list-description{
+      @apply font-medium text-xl text-primary
    }
    /* CTA */
    .impressions__content{
@@ -103,32 +125,35 @@
    .discover{
       @apply space-y-2
    }
-   .discover__title{
+   .discover__paragraph{
       @apply text-primary font-bold text-2xl
    }
-   .features-content--light{
-      @apply gap-6;
+   .service-features__content{
+      @apply grid grid-cols-3 bg-violet rounded-3xl mx-20 ;
       background: rgba(215, 152, 225, 0.15);
    }
    /* Testimonials */
    .testimonials{
       @apply flex flex-col justify-center items-center mt-20 text-center
    }
-   .cards{
+   .testimonials__cards{
       @apply grid grid-cols-3 mx-20 pt-10 gap-10
    }
-   .card{
+   .testimonials__card{
       @apply space-y-5  p-10 rounded-xl;
       border: 2px solid rgba(97, 153, 237, 0.26);
    }
-   .card__profile{
+   .testimonials__card-profile{
       @apply flex flex-col items-center space-y-3 text-center
    }
-   .card__profile-name{
+   .testimonials__card-profile-image{
       @apply text-xl font-semibold text-primary
    }
-   .card__profile-role{
+   .testimonials__card-profile-role{
       @apply font-normal text-xs
+   }
+   .testimonials__card-profile-name{
+      @apply font-medium text-xl text-primary
    }
    /* Footer */
    .footer{
@@ -137,8 +162,8 @@
    .footer__pages{
     @apply grid grid-cols-5
    }
-   .title--light {
-      @apply text-white font-semibold text-lg 
+   .footer__title{
+      @apply text-white font-semibold text-lg
    }
    .footer__list{
       @apply space-y-3 
@@ -149,24 +174,21 @@
   .footer__subscribe{
    @apply space-y-3 col-span-2
   }
-  .btn--subscribe{
-   @apply text-primary bg-white -ml-5;
+  .footer__subscribe-btn{
+   @apply text-primary bg-white -ml-5 rounded-xl font-bold text-base w-36 h-14;
   }
-  .subscribe-content__input{
+  .footer__input{
    @apply h-10 w-1/2 bg-[#2B2E3C] rounded-2xl p-8 outline-none
   }
-  .copyright{
+  .footer__copyright{
    @apply flex flex-row space-x-3 justify-center p-10  items-center
   }
-  .copyright__finsweet{
+  .footer__copyright-finsweet{
    @apply  opacity-50 font-normal text-xs 
   } 
   .price-content{
-    @apply flex flex-col text-center p-16 space-y-5 mt-16;
+    @apply flex flex-col items-center text-center p-16 space-y-5 mt-16;
     background-image: url(../dist/images/Blur\ Gradient.svg);
-  }
-  .btn-content{
-   @apply flex flex-row justify-center items-center
   }
   .footer__line{
    @apply flex-grow border-t border-[#888888]
