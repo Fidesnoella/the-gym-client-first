@@ -594,7 +594,8 @@ video {
 
 .navbar__btn, 
    .impressions__btn, 
-   .price-content__btn {
+   .price-content__btn, 
+   .header-product__btn {
   height: 3.5rem;
   width: 9rem;
   border-radius: 0.75rem;
@@ -611,7 +612,8 @@ video {
 
 .navbar__btn:hover, 
    .impressions__btn:hover, 
-   .price-content__btn:hover {
+   .price-content__btn:hover, 
+   .header-product__btn:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(49 56 82 / var(--tw-bg-opacity));
 }
@@ -647,7 +649,9 @@ video {
 
 .header-content__title, 
    .price-content__title, 
-   .contact__title {
+   .contact__title, 
+   .header-product__title, 
+   .company-service__title {
   font-size: 3rem;
   line-height: 1;
   font-weight: 700;
@@ -655,8 +659,8 @@ video {
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.header-content__description {
-  text-align: center;
+.header-content__description, 
+   .header-product__description {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 400;
@@ -717,25 +721,35 @@ video {
 
 .business-features__label, 
    .advert-section__label, 
-   .discover__label {
+   .discover__label, 
+   .marketing-section__label, 
+   .time-traker__label, 
+   .generation-section__label, 
+   .remote-teams__label {
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+  --tw-gradient-from: #373FFF;
+  --tw-gradient-to: rgb(55 63 255 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #3ACAF8;
+  -webkit-background-clip: text;
+          background-clip: text;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 400;
-  background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .business-features__item > :not([hidden]) ~ :not([hidden]), 
-   .service-features__item > :not([hidden]) ~ :not([hidden]) {
+   .service-features__item > :not([hidden]) ~ :not([hidden]), 
+   .company-service__item > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
 .business-features__item, 
-   .service-features__item {
+   .service-features__item, 
+   .company-service__item {
   padding: 2.5rem;
 }
 
@@ -783,7 +797,8 @@ video {
    .impressions__description, 
    .discover__description, 
    .price-content__description, 
-   .contact__description {
+   .contact__description, 
+   .marketing-section__description {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
@@ -814,7 +829,11 @@ video {
    .impressions__title, 
    .discover__title, 
    .service-features__title, 
-   .testimonials__title {
+   .testimonials__title, 
+   .marketing-section__title, 
+   .time-traker__title, 
+   .generation-section__title, 
+   .remote-teams__title {
   font-size: 3rem;
   line-height: 1;
   font-weight: 700;
@@ -864,10 +883,16 @@ video {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2.5rem;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #E0E4FC;
+  --tw-gradient-to: rgb(224 228 252 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgb(239 239 253 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #efeffd, var(--tw-gradient-to);
+  --tw-gradient-to: #e7edfa;
   padding: 1.25rem;
   padding-left: 5rem;
   padding-right: 5rem;
-  background-image: url(../dist/images/Blur\ Gradient.png);
 }
 
 .logo-wrapper {
@@ -1078,6 +1103,7 @@ video {
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  opacity: 0.5;
 }
 
 .price-content {
@@ -1108,110 +1134,166 @@ video {
 
 /* Product Page */
 
-.header-content--product {
+.header-product {
   margin-top: 0.5rem;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2.5rem;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #ffffff;
+  --tw-gradient-to: rgb(255 255 255 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgb(250 250 252 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #fafafc, var(--tw-gradient-to);
+  --tw-gradient-to: #e7edfa;
   padding-left: 5rem;
   padding-right: 5rem;
+  padding-top: 5rem;
   padding-bottom: 10rem;
-  background-image: url(../dist/images/Blur\ Gradient.jpg);
-  background-size: cover;
 }
 
-.header-content--description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.header-content--description > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-}
-
-.header-content--description {
-  text-align: start;
-}
-
-.btn--outlined {
+.header-product__btn-outlined {
+  height: 3.5rem;
+  width: 9rem;
+  cursor: pointer;
+  border-radius: 0.75rem;
   border-width: 2px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(224 228 252 / var(--tw-border-opacity));
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.btn--outlined:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 33 48 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.header-product__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
 }
 
-.grid-container {
+.logos-wrapper {
+  position: absolute;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.logos-wrapper__image {
+  margin-top: 24rem;
+  padding-top: 5rem;
+}
+
+.company-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #e7edfa;
+  --tw-gradient-to: rgb(231 237 250 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgb(231 240 247 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #e7f0f7, var(--tw-gradient-to);
+  --tw-gradient-to: #E0E4FC;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.company-service__content {
   margin-top: 2.5rem;
+  margin-right: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: flex-start;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 248 253 / var(--tw-bg-opacity));
+  padding-left: 5rem;
+  padding-right: 5rem;
+  text-align: start;
+}
+
+.company-service__subtitle {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+}
+
+.marketing-section, 
+.time-traker, 
+.generation-section, 
+.remote-teams {
+  position: relative;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 5rem;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2.5rem;
+  gap: 5rem;
 }
 
-.grid-container__section-image {
-  padding-right: 5rem;
-  padding-left: 5rem;
+.marketing-section__gradient {
+  position: absolute;
+  left: -5rem;
+  top: 14rem;
+  z-index: -10;
+  height: 400px;
+  width: 500px;
+  border-radius: 9999px;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #E0E4FC;
+  --tw-gradient-to: rgb(224 228 252 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgb(231 240 247 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #e7f0f7, var(--tw-gradient-to);
+  --tw-gradient-to: #E0E4FC;
+  --tw-blur: blur(64px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.grid-container__content {
+.marketing-section__container, 
+.time-traker__content, 
+.generation-section__content, 
+.remote-teams__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.grid-container__content > :not([hidden]) ~ :not([hidden]) {
+.marketing-section__container > :not([hidden]) ~ :not([hidden]), 
+.time-traker__content > :not([hidden]) ~ :not([hidden]), 
+.generation-section__content > :not([hidden]) ~ :not([hidden]), 
+.remote-teams__content > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
-.grid-container__content {
-  padding-left: 5rem;
-}
-
-.grid-container--gradientleft {
-  padding-left: 5rem;
-  background-image: url(../dist/images/Blur\ Gradientleft.png);
-}
-
-.grid-container--gradientright {
-  padding-right: 5rem;
-  background-image: url(../dist/images/Blur\ Gradient.svg);
-}
-
-.grid-container__position {
-  margin-top: -1.25rem;
-}
-
-.features--gradient {
-  margin-top: 0px;
-}
-
-.features--gradient > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
-}
-
-.features--gradient {
-  padding-top: 7rem;
-  background-image: url(../dist/images/Blur\ Gradient.png);
-}
-
-.features-content--curve {
-  margin-left: 0px;
-  background: rgba(255, 255, 255, 0.69);
-  border-radius: 0px 67px 0px 0px;
+.generation-section__gradient {
+  position: absolute;
+  right: 5rem;
+  z-index: -10;
+  height: 500px;
+  width: 500px;
+  border-radius: 9999px;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #E0E4FC;
+  --tw-gradient-to: rgb(224 228 252 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgb(231 240 247 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #e7f0f7, var(--tw-gradient-to);
+  --tw-gradient-to: #E0E4FC;
+  --tw-blur: blur(64px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 /* Price */
@@ -1276,10 +1358,9 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(107 124 255 / var(--tw-border-opacity));
   background-image: none;
-  background-image: url(../dist/images/Background.png);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../dist/images/Background.png);
 }
 
 .card-price__paragraph {

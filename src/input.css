@@ -14,7 +14,8 @@
    }
    .navbar__btn,
    .impressions__btn,
-   .price-content__btn{
+   .price-content__btn,
+   .header-product__btn{
       @apply rounded-xl bg-primary font-bold text-base w-36 h-14 text-white hover:bg-[#313852] outline-none;
    }
    /* Header */
@@ -27,11 +28,14 @@
    }
    .header-content__title,
    .price-content__title,
-   .contact__title{
+   .contact__title,
+   .header-product__title,
+   .company-service__title{
       @apply font-bold text-5xl text-primary
    }
-   .header-content__description{
-      @apply font-normal text-lg text-center
+   .header-content__description,
+   .header-product__description{
+      @apply font-normal text-lg 
    }
    .header-content__dashboard {
     @apply mx-auto;
@@ -49,15 +53,17 @@
    }
    .business-features__label,
    .advert-section__label,
-   .discover__label{
-      @apply font-normal text-lg;
-      background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
-      -webkit-background-clip: text;
+   .discover__label,
+   .marketing-section__label,
+   .time-traker__label,
+   .generation-section__label,
+   .remote-teams__label{
+      @apply font-normal text-lg bg-gradient-to-tr from-[#373FFF] to-[#3ACAF8] bg-clip-text ;
       -webkit-text-fill-color: transparent;
-      background-clip: text;
    }
    .business-features__item,
-   .service-features__item{
+   .service-features__item,
+   .company-service__item{
       @apply space-y-5  p-10 
    }
    .service-features__item--line{
@@ -79,7 +85,8 @@
    .impressions__description,
    .discover__description,
    .price-content__description,
-   .contact__description{
+   .contact__description,
+   .marketing-section__description{
       @apply font-normal text-base text-primary
    }
  /*   Why Us */
@@ -95,7 +102,11 @@
    .impressions__title,
    .discover__title,
    .service-features__title,
-   .testimonials__title{
+   .testimonials__title,
+   .marketing-section__title,
+   .time-traker__title,
+   .generation-section__title,
+   .remote-teams__title{
       @apply font-bold text-5xl text-primary
    }
    .advert-section__list-item,
@@ -114,13 +125,12 @@
       @apply space-y-5 flex flex-col justify-center;
    }
    .impressions{
-      @apply grid grid-cols-2 px-20 mt-20 p-5 gap-10;
-      background-image: url(../dist/images/Blur\ Gradient.png)
+      @apply grid grid-cols-2 px-20 mt-20 p-5 gap-10  bg-gradient-to-r from-violet via-[#efeffd] to-[#e7edfa];
    }
    .logo-wrapper{
       @apply mx-20 mt-14;
    }
-
+   
    /* Discover */
    .discover{
       @apply space-y-2
@@ -185,7 +195,7 @@
    @apply flex flex-row space-x-3 justify-center p-10  items-center
   }
   .footer__copyright-finsweet{
-   @apply  font-semibold text-lg text-white
+   @apply  font-semibold text-lg text-white opacity-50
   } 
   .price-content{
     @apply flex flex-col items-center text-center p-16 space-y-5 mt-16;
@@ -196,47 +206,48 @@
   }
   
 /* Product Page */
-.header-content--product{
-   @apply grid grid-cols-2 px-20 gap-10 mt-2  pb-40;
-   background-image: url(../dist/images/Blur\ Gradient.jpg);
-   background-size: cover;
+.header-product{
+   @apply grid grid-cols-2 px-20 gap-10 mt-2 pt-20 pb-40  bg-gradient-to-r from-[#ffffff] via-[#fafafc] to-[#e7edfa];
 }
-.header-content--description{
-   @apply flex flex-col text-start justify-center space-y-5 
+.header-product__btn-outlined{
+   @apply  cursor-pointer w-36 h-14 border-solid border-violet border-2 rounded-xl text-primary font-bold text-base 
 }
-.btn--outlined{
-   @apply bg-white text-primary border-2 hover:bg-primary hover:text-white
+.header-product__content{
+   @apply gap-y-5 flex flex-col
 }
-.grid-container{
-   @apply grid grid-cols-2 mt-10 gap-10;
+.logos-wrapper{
+   @apply absolute px-0 mx-20
+}
+.logos-wrapper__image{
+   @apply  mt-96 pt-20
+}
+.company-service{
+   @apply flex flex-col text-center justify-center items-center pt-20 bg-gradient-to-r from-[#e7edfa] via-[#e7f0f7] to-[#E0E4FC]
+}
+.company-service__content{
+   @apply grid grid-cols-3 bg-[#f1f8fd] px-20 mt-10 mr-20 rounded-r-3xl rounded-b-none items-start text-start
  
 }
-.grid-container__section-image{
-   @apply pr-20 pl-20;
+.company-service__subtitle{
+   @apply font-bold text-primary text-2xl
 }
-.grid-container__content{
-   @apply flex  flex-col justify-center space-y-5 pl-20;
-   
+.marketing-section,
+.time-traker,
+.generation-section,
+.remote-teams {
+   @apply grid grid-cols-2 mt-20 mx-20 gap-20 relative;  
 }
-.grid-container--gradientleft{
-   @apply pl-20;
-   background-image: url(../dist/images/Blur\ Gradientleft.png);
+.marketing-section__gradient{
+   @apply absolute blur-3xl -z-10 bg-gradient-to-r from-[#E0E4FC] via-[#e7f0f7] to-[#E0E4FC] -left-20 top-56 w-[500px] h-[400px] rounded-full
 }
-.grid-container--gradientright{
-   @apply pr-20;
-   background-image: url(../dist/images/Blur\ Gradient.svg);
+.marketing-section__container,
+.time-traker__content,
+.generation-section__content,
+.remote-teams__content{
+   @apply flex  flex-col justify-center space-y-5;
 }
-.grid-container__position{
-  @apply -mt-5;
-}
-.features--gradient{
-   @apply space-y-10 mt-0 pt-28; 
-   background-image: url(../dist/images/Blur\ Gradient.png);
-}
-.features-content--curve{
-   @apply ml-0;
-   background: rgba(255, 255, 255, 0.69);
-   border-radius: 0px 67px 0px 0px;
+.generation-section__gradient{
+   @apply absolute blur-3xl -z-10 bg-gradient-to-r from-[#E0E4FC] via-[#e7f0f7] to-[#E0E4FC] right-20  w-[500px] h-[500px] rounded-full
 }
 /* Price */
 .header-content--price{
@@ -262,11 +273,8 @@
    @apply p-10 bg-white rounded-3xl border-gray border-2;
 }
 .card-price--contained{
-   @apply border-blue border-4 bg-none;
+   @apply border-blue border-4 bg-none bg-no-repeat bg-cover;
    background-image: url(../dist/images/Background.png);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
 }
 .card-price__paragraph{
    @apply pt-10 pb-5

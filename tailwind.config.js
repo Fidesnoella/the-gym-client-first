@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'blur': "url('./dist/images/Blur gradient.svg')",
+        'BlurGradient': "url('./dist/images/Blur Gradient.svg')"
       }
     },
     colors: {
